@@ -13,7 +13,7 @@ public class Main {
         //
         Random ran = new Random();
         int x = ran.nextInt(10);
-        System.out.println(x);
+        //System.out.println(x);
         int attempt = 0,  userAnswer=0;
 
         while(true){
@@ -24,12 +24,12 @@ public class Main {
             attempt++;
 
             if(userNum==x) {
-                System.out.println("Вы выиграли!\n повторить игру? 1 -да, 0 - выйти");
+                System.out.println("Вы выиграли! \n повторить игру? 1 -да, 0 - выйти");
                 userAnswer = inputNumber.nextInt();
                 if(userAnswer==1){
                     x = ran.nextInt(10);
                     attempt=0;
-                    System.out.println(x);
+                    //System.out.println(x);
                 }
                 else if (userAnswer==0)  {
                     break;
@@ -45,7 +45,7 @@ public class Main {
                 if(userAnswer==1){
                     x = ran.nextInt(10);
                     attempt=0;
-                    System.out.println(x);
+                   // System.out.println(x);
                 }
                 else if (userAnswer==0)  {
                     break;
